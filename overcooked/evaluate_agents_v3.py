@@ -1028,7 +1028,7 @@ def evaluate_script(
 
 def parse_args():
     ap = argparse.ArgumentParser(
-        description="Evaluate competence-conditioned agents against held-out test clones.",
+        description="Evaluate competence-aware agents against held-out test clones.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     ap.add_argument("--scripts", type=str, nargs="+", required=True,

@@ -1,1 +1,1 @@
-"""STAT competence-conditioning experiment package."""
+"""STAT competence-aware experiment package."""

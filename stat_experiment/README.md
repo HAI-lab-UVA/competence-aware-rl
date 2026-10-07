@@ -1,4 +1,4 @@
-# STAT competence-conditioned agents
+# STAT competence-aware agents
 
 Run commands from the repository root in the separate PyTorch environment described in the main README. The original module layout is retained. Model loading defaults to frozen `artifacts/models/`; training, calibration, and default evaluation outputs go to `results/stat/`.
 

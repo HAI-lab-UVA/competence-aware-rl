@@ -1,6 +1,6 @@
-# Competence-conditioned agents and evaluation framework
+# Competence-aware agents and evaluation framework
 
-Implementation accompanying *Separating Belief from Ability: Evaluating Competence-Conditioned Adaptation in Multi-Agent Teams*.
+Implementation accompanying *Separating Belief from Ability: Evaluating Competence-Aware Adaptation in Multi-Agent Teams*.
 
 This repository provides CF, CCM, CCM+CF, and competence-agnostic baselines in Overcooked-AI and STAT, together with trained policies, partner inputs, and controlled evaluation. Vary believed partner competence while keeping the partner policies fixed, then measure behavioral adaptation separately from team performance.
 
@@ -42,7 +42,7 @@ competence_conditioned_rl/
 | tests/ | Metric and architecture-label boundary checks |
 | results/ | Generated experiment outputs; ignored by Git |
 
-Overcooked includes partner checkpoints and their competence labels, five self-play baselines, and 35 competence-conditioned policies. STAT includes the paper scenario's frozen partner and 40 adaptive-agent policies across five training seeds. Released checkpoints are stored in each domain's `artifacts/` directory, separately from new experiment outputs.
+Overcooked includes partner checkpoints and their competence labels, five self-play baselines, and 35 competence-aware policies. STAT includes the paper scenario's frozen partner and 40 adaptive-agent policies across five training seeds. Released checkpoints are stored in each domain's `artifacts/` directory, separately from new experiment outputs.
 
 Overcooked training and evaluation entry points are Python files directly under `overcooked/`; STAT entry points are modules under `stat_experiment/src/`.
 
@@ -98,11 +98,11 @@ python -m unittest discover -s tests -v
 
 If you use these agents or the evaluation framework, please cite the accompanying paper:
 
-> Anonymous Author(s). *Separating Belief from Ability: Evaluating Competence-Conditioned Adaptation in Multi-Agent Teams*. Anonymized manuscript.
+> Anonymous Author(s). *Separating Belief from Ability: Evaluating Competence-Aware Adaptation in Multi-Agent Teams*. Anonymized manuscript.
 
 ```bibtex
-@misc{competence_conditioned_adaptation,
-  title  = {Separating Belief from Ability: Evaluating Competence-Conditioned Adaptation in Multi-Agent Teams},
+@misc{competence_aware_adaptation,
+  title  = {Separating Belief from Ability: Evaluating Competence-Aware Adaptation in Multi-Agent Teams},
   author = {Anonymous Author(s)},
   note   = {Anonymized manuscript}
 }

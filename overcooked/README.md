@@ -28,7 +28,7 @@ python overcooked/run_baseline_pipeline.py \
   --shaping-pick-dish 2 --shaping-deliver-soup 5 --seed 0
 ```
 
-Fine-tune competence-conditioned agents using the released self-play baselines and partner population:
+Fine-tune competence-aware agents using the released self-play baselines and partner population:
 
 ```bash
 python overcooked/run_agent_pipeline.py \

@@ -1,1 +1,1 @@
-"""Implementation modules for the STAT competence-conditioned experiment."""
+"""Implementation modules for the STAT competence-aware experiment."""
