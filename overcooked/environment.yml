@@ -1,0 +1,23 @@
+# Environment for Overcooked training, evaluation, and metric reconstruction.
+# Core versions retained from the original project.
+# Metric reconstruction uses the original JAX / JaxMARL versions.
+name: competence-rl
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - jax==0.4.38
+      - jaxlib==0.4.38
+      - jaxmarl==0.1.0
+      - flax==0.10.4
+      - optax==0.2.5
+      - chex==0.1.90
+      - distrax==0.1.5
+      - numpy==1.26.4
+      - pandas==2.3.3
+      - scipy==1.12.0
+      - matplotlib==3.10.7
+      - pillow==12.0.0
+      - tqdm==4.67.1

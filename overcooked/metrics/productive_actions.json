@@ -1,0 +1,25 @@
+{
+  "_description": "Productive work events and onion/plate/soup task categories used by the Overcooked evaluation framework (paper Table 5). The same rules are implemented in metric_core.py.",
+  "base": {
+    "pick_onion": "onion",
+    "place_onion_pot": "onion",
+    "pick_plate": "plate",
+    "fill_plate": "plate",
+    "deliver_soup": "soup"
+  },
+  "layout_additions": {
+    "cramped_room": {},
+    "coord_ring": {},
+    "asymm_advantages": {},
+    "counter_circuit": {
+      "place_onion_counter": "onion"
+    },
+    "forced_coord": {
+      "place_onion_counter": "onion",
+      "place_plate_counter": "plate"
+    }
+  },
+  "never_productive": [
+    "place_soup_counter"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "extra_features": [
+    "competence"
+  ],
+  "n_workers": 4,
+  "epochs": 5000,
+  "pbt_interval": 100,
+  "output_name": "Asymm_Advantages_CF",
+  "training_clones": [
+    "c15_0_i0300_asymmetric_advantages.npz",
+    "c03_0_i0300_asymmetric_advantages.npz",
+    "c15_0_i0100_asymmetric_advantages.npz",
+    "c10_0_i0100_asymmetric_advantages.npz",
+    "c16_0_i0400_asymmetric_advantages.npz",
+    "c24_0_i0000_asymmetric_advantages.npz",
+    "c09_0_i0200_asymmetric_advantages.npz",
+    "c14_0_i0200_asymmetric_advantages.npz",
+    "c25_0_i0400_asymmetric_advantages.npz",
+    "c05_0_i0300_asymmetric_advantages.npz",
+    "c09_0_i0500_asymmetric_advantages.npz",
+    "c03_0_i0000_asymmetric_advantages.npz",
+    "c14_0_i0500_asymmetric_advantages.npz",
+    "c14_0_i0300_asymmetric_advantages.npz",
+    "c03_0_i0500_asymmetric_advantages.npz",
+    "c14_0_i0100_asymmetric_advantages.npz"
+  ],
+  "evaluation_clones": [
+    "c21_0_i0100_asymmetric_advantages.npz",
+    "c15_0_i0000_asymmetric_advantages.npz",
+    "c03_0_i0100_asymmetric_advantages.npz",
+    "c01_0_i0200_asymmetric_advantages.npz",
+    "c19_0_i0200_asymmetric_advantages.npz",
+    "c17_0_i0000_asymmetric_advantages.npz",
+    "c01_0_i0100_asymmetric_advantages.npz",
+    "c06_0_i0100_asymmetric_advantages.npz",
+    "c17_0_i0400_asymmetric_advantages.npz",
+    "c02_0_i0000_asymmetric_advantages.npz",
+    "c25_0_i0300_asymmetric_advantages.npz",
+    "c14_0_i0000_asymmetric_advantages.npz",
+    "c09_0_i0300_asymmetric_advantages.npz",
+    "c12_0_i0200_asymmetric_advantages.npz",
+    "c23_0_i0300_asymmetric_advantages.npz",
+    "c06_0_i0200_asymmetric_advantages.npz"
+  ],
+  "layout": "asymm_advantages",
+  "validation_clones": [
+    "c16_0_i0500_asymmetric_advantages.npz",
+    "c02_0_i0200_asymmetric_advantages.npz",
+    "c13_0_i0500_asymmetric_advantages.npz",
+    "c15_0_i0400_asymmetric_advantages.npz",
+    "c23_0_i0400_asymmetric_advantages.npz",
+    "c19_0_i0100_asymmetric_advantages.npz",
+    "c20_0_i0100_asymmetric_advantages.npz",
+    "c08_0_i0100_asymmetric_advantages.npz"
+  ]
+}

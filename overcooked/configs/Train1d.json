@@ -1,0 +1,548 @@
+[
+  {
+    "output_name": "Counter_Circuit_CF",
+    "training_clones": [
+      "c23_0_i0300_counter_circuit.npz",
+      "c22_0_i0300_counter_circuit.npz",
+      "c23_0_i0100_counter_circuit.npz",
+      "c20_0_i0300_counter_circuit.npz",
+      "c09_0_i0800_counter_circuit.npz",
+      "c01_0_i0900_counter_circuit.npz",
+      "c02_0_i0300_counter_circuit.npz",
+      "c11_0_i0100_counter_circuit.npz",
+      "c13_0_i0800_counter_circuit.npz",
+      "c02_0_i1000_counter_circuit.npz",
+      "c09_0_i0600_counter_circuit.npz",
+      "c03_0_i0700_counter_circuit.npz",
+      "c12_0_i0600_counter_circuit.npz",
+      "c15_0_i0400_counter_circuit.npz",
+      "c04_0_i0800_counter_circuit.npz",
+      "c18_0_i0100_counter_circuit.npz"
+    ],
+    "extra_features": [
+      "competence"
+    ],
+    "n_workers": 4,
+    "epochs": 5000,
+    "pbt_interval": 100,
+    "evaluation_clones": [
+      "c18_0_i0600_counter_circuit.npz",
+      "c08_0_i0000_counter_circuit.npz",
+      "c18_0_i1000_counter_circuit.npz",
+      "c10_0_i0600_counter_circuit.npz",
+      "c19_0_i0100_counter_circuit.npz",
+      "c21_0_i0200_counter_circuit.npz",
+      "c00_0_i1000_counter_circuit.npz",
+      "c03_0_i0400_counter_circuit.npz",
+      "c12_0_i1000_counter_circuit.npz",
+      "c03_0_i0900_counter_circuit.npz",
+      "c02_0_i0200_counter_circuit.npz",
+      "c02_0_i0800_counter_circuit.npz",
+      "c09_0_i0500_counter_circuit.npz",
+      "c22_0_i0700_counter_circuit.npz",
+      "c02_0_i0900_counter_circuit.npz",
+      "c20_0_i1000_counter_circuit.npz"
+    ],
+    "layout": "counter_circuit",
+    "validation_clones": [
+      "c15_0_i0800_counter_circuit.npz",
+      "c16_0_i1000_counter_circuit.npz",
+      "c17_0_i0700_counter_circuit.npz",
+      "c00_0_i0700_counter_circuit.npz",
+      "c18_0_i0700_counter_circuit.npz",
+      "c17_0_i0300_counter_circuit.npz",
+      "c02_0_i0100_counter_circuit.npz",
+      "c20_0_i0500_counter_circuit.npz"
+    ]
+  },
+  {
+    "output_name": "Counter_Circuit_CCM_low",
+    "training_clones": [
+      [
+        "c23_0_i0100_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c23_0_i0100_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c02_0_i0300_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c02_0_i0300_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c11_0_i0100_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c11_0_i0100_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c02_0_i1000_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c02_0_i1000_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c12_0_i0600_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c12_0_i0600_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c18_0_i0100_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c18_0_i0100_counter_circuit.npz",
+        "clone_1"
+      ]
+    ],
+    "extra_features": [],
+    "n_workers": 4,
+    "epochs": 5000,
+    "pbt_interval": 100,
+    "evaluation_clones": [
+      "c18_0_i0600_counter_circuit.npz",
+      "c08_0_i0000_counter_circuit.npz",
+      "c18_0_i1000_counter_circuit.npz",
+      "c10_0_i0600_counter_circuit.npz",
+      "c19_0_i0100_counter_circuit.npz",
+      "c21_0_i0200_counter_circuit.npz",
+      "c00_0_i1000_counter_circuit.npz",
+      "c03_0_i0400_counter_circuit.npz",
+      "c12_0_i1000_counter_circuit.npz",
+      "c03_0_i0900_counter_circuit.npz",
+      "c02_0_i0200_counter_circuit.npz",
+      "c02_0_i0800_counter_circuit.npz",
+      "c09_0_i0500_counter_circuit.npz",
+      "c22_0_i0700_counter_circuit.npz",
+      "c02_0_i0900_counter_circuit.npz",
+      "c20_0_i1000_counter_circuit.npz"
+    ],
+    "layout": "counter_circuit",
+    "validation_clones": [
+      "c15_0_i0800_counter_circuit.npz",
+      "c16_0_i1000_counter_circuit.npz",
+      "c17_0_i0700_counter_circuit.npz",
+      "c00_0_i0700_counter_circuit.npz",
+      "c18_0_i0700_counter_circuit.npz",
+      "c17_0_i0300_counter_circuit.npz",
+      "c02_0_i0100_counter_circuit.npz",
+      "c20_0_i0500_counter_circuit.npz"
+    ]
+  },
+  {
+    "output_name": "Counter_Circuit_CCM_middle",
+    "training_clones": [
+      [
+        "c23_0_i0300_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c23_0_i0300_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c22_0_i0300_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c22_0_i0300_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c20_0_i0300_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c20_0_i0300_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c09_0_i0800_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c09_0_i0800_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c13_0_i0800_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c13_0_i0800_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c09_0_i0600_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c09_0_i0600_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c03_0_i0700_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c03_0_i0700_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c15_0_i0400_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c15_0_i0400_counter_circuit.npz",
+        "clone_1"
+      ]
+    ],
+    "extra_features": [],
+    "n_workers": 4,
+    "epochs": 5000,
+    "pbt_interval": 100,
+    "evaluation_clones": [
+      "c18_0_i0600_counter_circuit.npz",
+      "c08_0_i0000_counter_circuit.npz",
+      "c18_0_i1000_counter_circuit.npz",
+      "c10_0_i0600_counter_circuit.npz",
+      "c19_0_i0100_counter_circuit.npz",
+      "c21_0_i0200_counter_circuit.npz",
+      "c00_0_i1000_counter_circuit.npz",
+      "c03_0_i0400_counter_circuit.npz",
+      "c12_0_i1000_counter_circuit.npz",
+      "c03_0_i0900_counter_circuit.npz",
+      "c02_0_i0200_counter_circuit.npz",
+      "c02_0_i0800_counter_circuit.npz",
+      "c09_0_i0500_counter_circuit.npz",
+      "c22_0_i0700_counter_circuit.npz",
+      "c02_0_i0900_counter_circuit.npz",
+      "c20_0_i1000_counter_circuit.npz"
+    ],
+    "layout": "counter_circuit",
+    "validation_clones": [
+      "c15_0_i0800_counter_circuit.npz",
+      "c16_0_i1000_counter_circuit.npz",
+      "c17_0_i0700_counter_circuit.npz",
+      "c00_0_i0700_counter_circuit.npz",
+      "c18_0_i0700_counter_circuit.npz",
+      "c17_0_i0300_counter_circuit.npz",
+      "c02_0_i0100_counter_circuit.npz",
+      "c20_0_i0500_counter_circuit.npz"
+    ]
+  },
+  {
+    "output_name": "Counter_Circuit_CCM_high",
+    "training_clones": [
+      [
+        "c01_0_i0900_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c01_0_i0900_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c04_0_i0800_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c04_0_i0800_counter_circuit.npz",
+        "clone_1"
+      ]
+    ],
+    "extra_features": [],
+    "n_workers": 4,
+    "epochs": 5000,
+    "pbt_interval": 100,
+    "evaluation_clones": [
+      "c18_0_i0600_counter_circuit.npz",
+      "c08_0_i0000_counter_circuit.npz",
+      "c18_0_i1000_counter_circuit.npz",
+      "c10_0_i0600_counter_circuit.npz",
+      "c19_0_i0100_counter_circuit.npz",
+      "c21_0_i0200_counter_circuit.npz",
+      "c00_0_i1000_counter_circuit.npz",
+      "c03_0_i0400_counter_circuit.npz",
+      "c12_0_i1000_counter_circuit.npz",
+      "c03_0_i0900_counter_circuit.npz",
+      "c02_0_i0200_counter_circuit.npz",
+      "c02_0_i0800_counter_circuit.npz",
+      "c09_0_i0500_counter_circuit.npz",
+      "c22_0_i0700_counter_circuit.npz",
+      "c02_0_i0900_counter_circuit.npz",
+      "c20_0_i1000_counter_circuit.npz"
+    ],
+    "layout": "counter_circuit",
+    "validation_clones": [
+      "c15_0_i0800_counter_circuit.npz",
+      "c16_0_i1000_counter_circuit.npz",
+      "c17_0_i0700_counter_circuit.npz",
+      "c00_0_i0700_counter_circuit.npz",
+      "c18_0_i0700_counter_circuit.npz",
+      "c17_0_i0300_counter_circuit.npz",
+      "c02_0_i0100_counter_circuit.npz",
+      "c20_0_i0500_counter_circuit.npz"
+    ]
+  },
+  {
+    "output_name": "Counter_Circuit_CCM+CF_low",
+    "training_clones": [
+      [
+        "c23_0_i0100_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c23_0_i0100_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c02_0_i0300_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c02_0_i0300_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c11_0_i0100_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c11_0_i0100_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c02_0_i1000_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c02_0_i1000_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c12_0_i0600_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c12_0_i0600_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c18_0_i0100_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c18_0_i0100_counter_circuit.npz",
+        "clone_1"
+      ]
+    ],
+    "extra_features": [
+      "competence"
+    ],
+    "n_workers": 4,
+    "epochs": 5000,
+    "pbt_interval": 100,
+    "evaluation_clones": [
+      "c18_0_i0600_counter_circuit.npz",
+      "c08_0_i0000_counter_circuit.npz",
+      "c18_0_i1000_counter_circuit.npz",
+      "c10_0_i0600_counter_circuit.npz",
+      "c19_0_i0100_counter_circuit.npz",
+      "c21_0_i0200_counter_circuit.npz",
+      "c00_0_i1000_counter_circuit.npz",
+      "c03_0_i0400_counter_circuit.npz",
+      "c12_0_i1000_counter_circuit.npz",
+      "c03_0_i0900_counter_circuit.npz",
+      "c02_0_i0200_counter_circuit.npz",
+      "c02_0_i0800_counter_circuit.npz",
+      "c09_0_i0500_counter_circuit.npz",
+      "c22_0_i0700_counter_circuit.npz",
+      "c02_0_i0900_counter_circuit.npz",
+      "c20_0_i1000_counter_circuit.npz"
+    ],
+    "layout": "counter_circuit",
+    "validation_clones": [
+      "c15_0_i0800_counter_circuit.npz",
+      "c16_0_i1000_counter_circuit.npz",
+      "c17_0_i0700_counter_circuit.npz",
+      "c00_0_i0700_counter_circuit.npz",
+      "c18_0_i0700_counter_circuit.npz",
+      "c17_0_i0300_counter_circuit.npz",
+      "c02_0_i0100_counter_circuit.npz",
+      "c20_0_i0500_counter_circuit.npz"
+    ]
+  },
+  {
+    "output_name": "Counter_Circuit_CCM+CF_middle",
+    "training_clones": [
+      [
+        "c23_0_i0300_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c23_0_i0300_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c22_0_i0300_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c22_0_i0300_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c20_0_i0300_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c20_0_i0300_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c09_0_i0800_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c09_0_i0800_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c13_0_i0800_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c13_0_i0800_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c09_0_i0600_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c09_0_i0600_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c03_0_i0700_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c03_0_i0700_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c15_0_i0400_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c15_0_i0400_counter_circuit.npz",
+        "clone_1"
+      ]
+    ],
+    "extra_features": [
+      "competence"
+    ],
+    "n_workers": 4,
+    "epochs": 5000,
+    "pbt_interval": 100,
+    "evaluation_clones": [
+      "c18_0_i0600_counter_circuit.npz",
+      "c08_0_i0000_counter_circuit.npz",
+      "c18_0_i1000_counter_circuit.npz",
+      "c10_0_i0600_counter_circuit.npz",
+      "c19_0_i0100_counter_circuit.npz",
+      "c21_0_i0200_counter_circuit.npz",
+      "c00_0_i1000_counter_circuit.npz",
+      "c03_0_i0400_counter_circuit.npz",
+      "c12_0_i1000_counter_circuit.npz",
+      "c03_0_i0900_counter_circuit.npz",
+      "c02_0_i0200_counter_circuit.npz",
+      "c02_0_i0800_counter_circuit.npz",
+      "c09_0_i0500_counter_circuit.npz",
+      "c22_0_i0700_counter_circuit.npz",
+      "c02_0_i0900_counter_circuit.npz",
+      "c20_0_i1000_counter_circuit.npz"
+    ],
+    "layout": "counter_circuit",
+    "validation_clones": [
+      "c15_0_i0800_counter_circuit.npz",
+      "c16_0_i1000_counter_circuit.npz",
+      "c17_0_i0700_counter_circuit.npz",
+      "c00_0_i0700_counter_circuit.npz",
+      "c18_0_i0700_counter_circuit.npz",
+      "c17_0_i0300_counter_circuit.npz",
+      "c02_0_i0100_counter_circuit.npz",
+      "c20_0_i0500_counter_circuit.npz"
+    ]
+  },
+  {
+    "output_name": "Counter_Circuit_CCM+CF_high",
+    "training_clones": [
+      [
+        "c01_0_i0900_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c01_0_i0900_counter_circuit.npz",
+        "clone_1"
+      ],
+      [
+        "c04_0_i0800_counter_circuit.npz",
+        "clone_0"
+      ],
+      [
+        "c04_0_i0800_counter_circuit.npz",
+        "clone_1"
+      ]
+    ],
+    "extra_features": [
+      "competence"
+    ],
+    "n_workers": 4,
+    "epochs": 5000,
+    "pbt_interval": 100,
+    "evaluation_clones": [
+      "c18_0_i0600_counter_circuit.npz",
+      "c08_0_i0000_counter_circuit.npz",
+      "c18_0_i1000_counter_circuit.npz",
+      "c10_0_i0600_counter_circuit.npz",
+      "c19_0_i0100_counter_circuit.npz",
+      "c21_0_i0200_counter_circuit.npz",
+      "c00_0_i1000_counter_circuit.npz",
+      "c03_0_i0400_counter_circuit.npz",
+      "c12_0_i1000_counter_circuit.npz",
+      "c03_0_i0900_counter_circuit.npz",
+      "c02_0_i0200_counter_circuit.npz",
+      "c02_0_i0800_counter_circuit.npz",
+      "c09_0_i0500_counter_circuit.npz",
+      "c22_0_i0700_counter_circuit.npz",
+      "c02_0_i0900_counter_circuit.npz",
+      "c20_0_i1000_counter_circuit.npz"
+    ],
+    "layout": "counter_circuit",
+    "validation_clones": [
+      "c15_0_i0800_counter_circuit.npz",
+      "c16_0_i1000_counter_circuit.npz",
+      "c17_0_i0700_counter_circuit.npz",
+      "c00_0_i0700_counter_circuit.npz",
+      "c18_0_i0700_counter_circuit.npz",
+      "c17_0_i0300_counter_circuit.npz",
+      "c02_0_i0100_counter_circuit.npz",
+      "c20_0_i0500_counter_circuit.npz"
+    ]
+  }
+]

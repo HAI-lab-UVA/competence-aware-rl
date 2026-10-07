@@ -1,0 +1,7 @@
+# The STAT environment is the public release, pinned to the commit used for testing:
+stat-marl-eval @ git+https://github.com/mariacardei/coordination_aware_MARL@7fc06ddb900cc7eabdd37663648ad2daca562253
+mesa>=2.0,<3          # STAT uses the mesa 2 Agent API
+torch>=2.0
+gymnasium>=0.29
+numpy
+scipy

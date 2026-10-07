@@ -1,0 +1,53 @@
+{
+  "2A_4T_5x3": {
+    "num_agents": 2,
+    "num_tasks": 4,
+    "width": 5,
+    "height": 3,
+    "num_bins": 5,
+    "adaptive_index": 0,
+    "partner_indices": [
+      1
+    ],
+    "max_steps": 700
+  },
+  "3A_6T_5x3": {
+    "num_agents": 3,
+    "num_tasks": 6,
+    "width": 5,
+    "height": 3,
+    "num_bins": 5,
+    "adaptive_index": 0,
+    "partner_indices": [
+      1,
+      2
+    ],
+    "max_steps": 700
+  },
+  "3A_12T_10x6": {
+    "num_agents": 3,
+    "num_tasks": 12,
+    "width": 10,
+    "height": 6,
+    "num_bins": 5,
+    "adaptive_index": 0,
+    "partner_indices": [
+      1,
+      2
+    ],
+    "max_steps": 700
+  },
+  "3A_25T_25x15": {
+    "num_agents": 3,
+    "num_tasks": 25,
+    "width": 25,
+    "height": 15,
+    "num_bins": 5,
+    "adaptive_index": 0,
+    "partner_indices": [
+      1,
+      2
+    ],
+    "max_steps": 700
+  }
+}

@@ -1,0 +1,531 @@
+[
+  {
+    "output_name": "Coord_Ring_CF",
+    "training_clones": [
+      "c19_0_i0400_coordination_ring.npz",
+      "c18_0_i0200_coordination_ring.npz",
+      "c25_0_i0200_coordination_ring.npz",
+      "c07_0_i0500_coordination_ring.npz",
+      "c23_0_i0200_coordination_ring.npz",
+      "c12_0_i0000_coordination_ring.npz",
+      "c06_0_i0000_coordination_ring.npz",
+      "c25_0_i0300_coordination_ring.npz",
+      "c23_0_i0100_coordination_ring.npz",
+      "c18_0_i0000_coordination_ring.npz",
+      "c06_0_i0400_coordination_ring.npz",
+      "c23_0_i0300_coordination_ring.npz",
+      "c01_0_i0500_coordination_ring.npz",
+      "c02_0_i0400_coordination_ring.npz",
+      "c25_0_i0400_coordination_ring.npz"
+    ],
+    "extra_features": [
+      "competence"
+    ],
+    "n_workers": 4,
+    "epochs": 5000,
+    "pbt_interval": 100,
+    "evaluation_clones": [
+      "c13_0_i0200_coordination_ring.npz",
+      "c14_0_i0500_coordination_ring.npz",
+      "c10_0_i0100_coordination_ring.npz",
+      "c16_0_i0200_coordination_ring.npz",
+      "c09_0_i0400_coordination_ring.npz",
+      "c22_0_i0400_coordination_ring.npz",
+      "c05_0_i0100_coordination_ring.npz",
+      "c19_0_i0500_coordination_ring.npz",
+      "c02_0_i0300_coordination_ring.npz",
+      "c20_0_i0400_coordination_ring.npz",
+      "c02_0_i0100_coordination_ring.npz",
+      "c02_0_i0200_coordination_ring.npz",
+      "c02_0_i0000_coordination_ring.npz",
+      "c21_0_i0300_coordination_ring.npz",
+      "c15_0_i0100_coordination_ring.npz",
+      "c10_0_i0000_coordination_ring.npz"
+    ],
+    "layout": "coord_ring",
+    "validation_clones": [
+      "c19_0_i0200_coordination_ring.npz",
+      "c00_0_i0100_coordination_ring.npz",
+      "c08_0_i0400_coordination_ring.npz",
+      "c08_0_i0000_coordination_ring.npz",
+      "c11_0_i0000_coordination_ring.npz",
+      "c05_0_i0200_coordination_ring.npz",
+      "c20_0_i0300_coordination_ring.npz",
+      "c16_0_i0500_coordination_ring.npz"
+    ]
+  },
+  {
+    "output_name": "Coord_Ring_CCM_low",
+    "training_clones": [
+      [
+        "c18_0_i0200_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c25_0_i0200_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c25_0_i0200_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c23_0_i0200_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c12_0_i0000_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c12_0_i0000_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c06_0_i0000_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c06_0_i0000_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c23_0_i0100_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c23_0_i0100_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c18_0_i0000_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c18_0_i0000_coordination_ring.npz",
+        "clone_1"
+      ]
+    ],
+    "extra_features": [],
+    "n_workers": 4,
+    "epochs": 5000,
+    "pbt_interval": 100,
+    "evaluation_clones": [
+      "c13_0_i0200_coordination_ring.npz",
+      "c14_0_i0500_coordination_ring.npz",
+      "c10_0_i0100_coordination_ring.npz",
+      "c16_0_i0200_coordination_ring.npz",
+      "c09_0_i0400_coordination_ring.npz",
+      "c22_0_i0400_coordination_ring.npz",
+      "c05_0_i0100_coordination_ring.npz",
+      "c19_0_i0500_coordination_ring.npz",
+      "c02_0_i0300_coordination_ring.npz",
+      "c20_0_i0400_coordination_ring.npz",
+      "c02_0_i0100_coordination_ring.npz",
+      "c02_0_i0200_coordination_ring.npz",
+      "c02_0_i0000_coordination_ring.npz",
+      "c21_0_i0300_coordination_ring.npz",
+      "c15_0_i0100_coordination_ring.npz",
+      "c10_0_i0000_coordination_ring.npz"
+    ],
+    "layout": "coord_ring",
+    "validation_clones": [
+      "c19_0_i0200_coordination_ring.npz",
+      "c00_0_i0100_coordination_ring.npz",
+      "c08_0_i0400_coordination_ring.npz",
+      "c08_0_i0000_coordination_ring.npz",
+      "c11_0_i0000_coordination_ring.npz",
+      "c05_0_i0200_coordination_ring.npz",
+      "c20_0_i0300_coordination_ring.npz",
+      "c16_0_i0500_coordination_ring.npz"
+    ]
+  },
+  {
+    "output_name": "Coord_Ring_CCM_middle",
+    "training_clones": [
+      [
+        "c18_0_i0200_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c07_0_i0500_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c07_0_i0500_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c23_0_i0200_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c25_0_i0300_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c06_0_i0400_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c06_0_i0400_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c23_0_i0300_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c23_0_i0300_coordination_ring.npz",
+        "clone_1"
+      ]
+    ],
+    "extra_features": [],
+    "n_workers": 4,
+    "epochs": 5000,
+    "pbt_interval": 100,
+    "evaluation_clones": [
+      "c13_0_i0200_coordination_ring.npz",
+      "c14_0_i0500_coordination_ring.npz",
+      "c10_0_i0100_coordination_ring.npz",
+      "c16_0_i0200_coordination_ring.npz",
+      "c09_0_i0400_coordination_ring.npz",
+      "c22_0_i0400_coordination_ring.npz",
+      "c05_0_i0100_coordination_ring.npz",
+      "c19_0_i0500_coordination_ring.npz",
+      "c02_0_i0300_coordination_ring.npz",
+      "c20_0_i0400_coordination_ring.npz",
+      "c02_0_i0100_coordination_ring.npz",
+      "c02_0_i0200_coordination_ring.npz",
+      "c02_0_i0000_coordination_ring.npz",
+      "c21_0_i0300_coordination_ring.npz",
+      "c15_0_i0100_coordination_ring.npz",
+      "c10_0_i0000_coordination_ring.npz"
+    ],
+    "layout": "coord_ring",
+    "validation_clones": [
+      "c19_0_i0200_coordination_ring.npz",
+      "c00_0_i0100_coordination_ring.npz",
+      "c08_0_i0400_coordination_ring.npz",
+      "c08_0_i0000_coordination_ring.npz",
+      "c11_0_i0000_coordination_ring.npz",
+      "c05_0_i0200_coordination_ring.npz",
+      "c20_0_i0300_coordination_ring.npz",
+      "c16_0_i0500_coordination_ring.npz"
+    ]
+  },
+  {
+    "output_name": "Coord_Ring_CCM_high",
+    "training_clones": [
+      [
+        "c19_0_i0400_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c19_0_i0400_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c25_0_i0300_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c01_0_i0500_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c01_0_i0500_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c02_0_i0400_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c02_0_i0400_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c25_0_i0400_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c25_0_i0400_coordination_ring.npz",
+        "clone_1"
+      ]
+    ],
+    "extra_features": [],
+    "n_workers": 4,
+    "epochs": 5000,
+    "pbt_interval": 100,
+    "evaluation_clones": [
+      "c13_0_i0200_coordination_ring.npz",
+      "c14_0_i0500_coordination_ring.npz",
+      "c10_0_i0100_coordination_ring.npz",
+      "c16_0_i0200_coordination_ring.npz",
+      "c09_0_i0400_coordination_ring.npz",
+      "c22_0_i0400_coordination_ring.npz",
+      "c05_0_i0100_coordination_ring.npz",
+      "c19_0_i0500_coordination_ring.npz",
+      "c02_0_i0300_coordination_ring.npz",
+      "c20_0_i0400_coordination_ring.npz",
+      "c02_0_i0100_coordination_ring.npz",
+      "c02_0_i0200_coordination_ring.npz",
+      "c02_0_i0000_coordination_ring.npz",
+      "c21_0_i0300_coordination_ring.npz",
+      "c15_0_i0100_coordination_ring.npz",
+      "c10_0_i0000_coordination_ring.npz"
+    ],
+    "layout": "coord_ring",
+    "validation_clones": [
+      "c19_0_i0200_coordination_ring.npz",
+      "c00_0_i0100_coordination_ring.npz",
+      "c08_0_i0400_coordination_ring.npz",
+      "c08_0_i0000_coordination_ring.npz",
+      "c11_0_i0000_coordination_ring.npz",
+      "c05_0_i0200_coordination_ring.npz",
+      "c20_0_i0300_coordination_ring.npz",
+      "c16_0_i0500_coordination_ring.npz"
+    ]
+  },
+  {
+    "output_name": "Coord_Ring_CCM+CF_low",
+    "training_clones": [
+      [
+        "c18_0_i0200_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c25_0_i0200_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c25_0_i0200_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c23_0_i0200_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c12_0_i0000_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c12_0_i0000_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c06_0_i0000_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c06_0_i0000_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c23_0_i0100_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c23_0_i0100_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c18_0_i0000_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c18_0_i0000_coordination_ring.npz",
+        "clone_1"
+      ]
+    ],
+    "extra_features": [
+      "competence"
+    ],
+    "n_workers": 4,
+    "epochs": 5000,
+    "pbt_interval": 100,
+    "evaluation_clones": [
+      "c13_0_i0200_coordination_ring.npz",
+      "c14_0_i0500_coordination_ring.npz",
+      "c10_0_i0100_coordination_ring.npz",
+      "c16_0_i0200_coordination_ring.npz",
+      "c09_0_i0400_coordination_ring.npz",
+      "c22_0_i0400_coordination_ring.npz",
+      "c05_0_i0100_coordination_ring.npz",
+      "c19_0_i0500_coordination_ring.npz",
+      "c02_0_i0300_coordination_ring.npz",
+      "c20_0_i0400_coordination_ring.npz",
+      "c02_0_i0100_coordination_ring.npz",
+      "c02_0_i0200_coordination_ring.npz",
+      "c02_0_i0000_coordination_ring.npz",
+      "c21_0_i0300_coordination_ring.npz",
+      "c15_0_i0100_coordination_ring.npz",
+      "c10_0_i0000_coordination_ring.npz"
+    ],
+    "layout": "coord_ring",
+    "validation_clones": [
+      "c19_0_i0200_coordination_ring.npz",
+      "c00_0_i0100_coordination_ring.npz",
+      "c08_0_i0400_coordination_ring.npz",
+      "c08_0_i0000_coordination_ring.npz",
+      "c11_0_i0000_coordination_ring.npz",
+      "c05_0_i0200_coordination_ring.npz",
+      "c20_0_i0300_coordination_ring.npz",
+      "c16_0_i0500_coordination_ring.npz"
+    ]
+  },
+  {
+    "output_name": "Coord_Ring_CCM+CF_middle",
+    "training_clones": [
+      [
+        "c18_0_i0200_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c07_0_i0500_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c07_0_i0500_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c23_0_i0200_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c25_0_i0300_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c06_0_i0400_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c06_0_i0400_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c23_0_i0300_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c23_0_i0300_coordination_ring.npz",
+        "clone_1"
+      ]
+    ],
+    "extra_features": [
+      "competence"
+    ],
+    "n_workers": 4,
+    "epochs": 5000,
+    "pbt_interval": 100,
+    "evaluation_clones": [
+      "c13_0_i0200_coordination_ring.npz",
+      "c14_0_i0500_coordination_ring.npz",
+      "c10_0_i0100_coordination_ring.npz",
+      "c16_0_i0200_coordination_ring.npz",
+      "c09_0_i0400_coordination_ring.npz",
+      "c22_0_i0400_coordination_ring.npz",
+      "c05_0_i0100_coordination_ring.npz",
+      "c19_0_i0500_coordination_ring.npz",
+      "c02_0_i0300_coordination_ring.npz",
+      "c20_0_i0400_coordination_ring.npz",
+      "c02_0_i0100_coordination_ring.npz",
+      "c02_0_i0200_coordination_ring.npz",
+      "c02_0_i0000_coordination_ring.npz",
+      "c21_0_i0300_coordination_ring.npz",
+      "c15_0_i0100_coordination_ring.npz",
+      "c10_0_i0000_coordination_ring.npz"
+    ],
+    "layout": "coord_ring",
+    "validation_clones": [
+      "c19_0_i0200_coordination_ring.npz",
+      "c00_0_i0100_coordination_ring.npz",
+      "c08_0_i0400_coordination_ring.npz",
+      "c08_0_i0000_coordination_ring.npz",
+      "c11_0_i0000_coordination_ring.npz",
+      "c05_0_i0200_coordination_ring.npz",
+      "c20_0_i0300_coordination_ring.npz",
+      "c16_0_i0500_coordination_ring.npz"
+    ]
+  },
+  {
+    "output_name": "Coord_Ring_CCM+CF_high",
+    "training_clones": [
+      [
+        "c19_0_i0400_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c19_0_i0400_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c25_0_i0300_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c01_0_i0500_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c01_0_i0500_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c02_0_i0400_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c02_0_i0400_coordination_ring.npz",
+        "clone_1"
+      ],
+      [
+        "c25_0_i0400_coordination_ring.npz",
+        "clone_0"
+      ],
+      [
+        "c25_0_i0400_coordination_ring.npz",
+        "clone_1"
+      ]
+    ],
+    "extra_features": [
+      "competence"
+    ],
+    "n_workers": 4,
+    "epochs": 5000,
+    "pbt_interval": 100,
+    "evaluation_clones": [
+      "c13_0_i0200_coordination_ring.npz",
+      "c14_0_i0500_coordination_ring.npz",
+      "c10_0_i0100_coordination_ring.npz",
+      "c16_0_i0200_coordination_ring.npz",
+      "c09_0_i0400_coordination_ring.npz",
+      "c22_0_i0400_coordination_ring.npz",
+      "c05_0_i0100_coordination_ring.npz",
+      "c19_0_i0500_coordination_ring.npz",
+      "c02_0_i0300_coordination_ring.npz",
+      "c20_0_i0400_coordination_ring.npz",
+      "c02_0_i0100_coordination_ring.npz",
+      "c02_0_i0200_coordination_ring.npz",
+      "c02_0_i0000_coordination_ring.npz",
+      "c21_0_i0300_coordination_ring.npz",
+      "c15_0_i0100_coordination_ring.npz",
+      "c10_0_i0000_coordination_ring.npz"
+    ],
+    "layout": "coord_ring",
+    "validation_clones": [
+      "c19_0_i0200_coordination_ring.npz",
+      "c00_0_i0100_coordination_ring.npz",
+      "c08_0_i0400_coordination_ring.npz",
+      "c08_0_i0000_coordination_ring.npz",
+      "c11_0_i0000_coordination_ring.npz",
+      "c05_0_i0200_coordination_ring.npz",
+      "c20_0_i0300_coordination_ring.npz",
+      "c16_0_i0500_coordination_ring.npz"
+    ]
+  }
+]

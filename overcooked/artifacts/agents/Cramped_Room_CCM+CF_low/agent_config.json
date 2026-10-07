@@ -1,0 +1,88 @@
+{
+  "extra_features": [
+    "competence"
+  ],
+  "n_workers": 4,
+  "epochs": 5000,
+  "pbt_interval": 100,
+  "output_name": "Cramped_Room_CCM+CF_low",
+  "training_clones": [
+    [
+      "c08_w1_i0500_cramped_room.npz",
+      "clone_1"
+    ],
+    [
+      "c26_w1_i0100_cramped_room.npz",
+      "clone_0"
+    ],
+    [
+      "c03_w1_i0200_cramped_room.npz",
+      "clone_1"
+    ],
+    [
+      "c03_w1_i0300_cramped_room.npz",
+      "clone_1"
+    ],
+    [
+      "c08_w1_i0000_cramped_room.npz",
+      "clone_0"
+    ],
+    [
+      "c08_w1_i0000_cramped_room.npz",
+      "clone_1"
+    ],
+    [
+      "c26_w1_i0400_cramped_room.npz",
+      "clone_1"
+    ],
+    [
+      "c36_w1_i0200_cramped_room.npz",
+      "clone_1"
+    ],
+    [
+      "c08_w1_i0100_cramped_room.npz",
+      "clone_0"
+    ],
+    [
+      "c08_w1_i0100_cramped_room.npz",
+      "clone_1"
+    ],
+    [
+      "c41_w1_i0000_cramped_room.npz",
+      "clone_0"
+    ],
+    [
+      "c41_w1_i0000_cramped_room.npz",
+      "clone_1"
+    ]
+  ],
+  "evaluation_clones": [
+    "c05_w1_i0500_cramped_room.npz",
+    "c31_w1_i0300_cramped_room.npz",
+    "c00_w1_i0300_cramped_room.npz",
+    "c01_w1_i0100_cramped_room.npz",
+    "c08_w1_i0200_cramped_room.npz",
+    "c30_w1_i0200_cramped_room.npz",
+    "c22_w1_i0300_cramped_room.npz",
+    "c16_w1_i0200_cramped_room.npz",
+    "c13_w1_i0000_cramped_room.npz",
+    "c01_w1_i0500_cramped_room.npz",
+    "c22_w1_i0100_cramped_room.npz",
+    "c24_w1_i0100_cramped_room.npz",
+    "c10_w1_i0300_cramped_room.npz",
+    "c20_w1_i0200_cramped_room.npz",
+    "c09_w1_i0300_cramped_room.npz",
+    "c30_w1_i0100_cramped_room.npz"
+  ],
+  "layout": "cramped_room",
+  "validation_clones": [
+    "c07_w1_i0300_cramped_room.npz",
+    "c22_w1_i0400_cramped_room.npz",
+    "c05_w1_i0300_cramped_room.npz",
+    "c24_w1_i0000_cramped_room.npz",
+    "c00_w1_i0100_cramped_room.npz",
+    "c36_w1_i0100_cramped_room.npz",
+    "c03_w1_i0100_cramped_room.npz",
+    "c23_w1_i0500_cramped_room.npz"
+  ]
+}

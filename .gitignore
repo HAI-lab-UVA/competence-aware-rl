@@ -1,0 +1,11 @@
+# Generated experiments and caches
+results/*
+!results/.gitkeep
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+.ipynb_checkpoints/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

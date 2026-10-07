@@ -1,0 +1,72 @@
+{
+  "extra_features": [
+    "competence"
+  ],
+  "n_workers": 4,
+  "epochs": 5000,
+  "pbt_interval": 100,
+  "output_name": "Forced_Coordination_CCM+CF_high",
+  "training_clones": [
+    [
+      "c15_0_i1200_forced_coordination.npz",
+      "clone_1"
+    ],
+    [
+      "c20_0_i1200_forced_coordination.npz",
+      "clone_1"
+    ],
+    [
+      "c14_0_i1200_forced_coordination.npz",
+      "clone_0"
+    ],
+    [
+      "c14_0_i1200_forced_coordination.npz",
+      "clone_1"
+    ],
+    [
+      "c14_0_i2000_forced_coordination.npz",
+      "clone_1"
+    ],
+    [
+      "c13_0_i1200_forced_coordination.npz",
+      "clone_0"
+    ],
+    [
+      "c13_0_i1200_forced_coordination.npz",
+      "clone_1"
+    ],
+    [
+      "c16_0_i1200_forced_coordination.npz",
+      "clone_1"
+    ]
+  ],
+  "evaluation_clones": [
+    "c01_0_i0800_forced_coordination.npz",
+    "c09_0_i0400_forced_coordination.npz",
+    "c21_0_i1600_forced_coordination.npz",
+    "c13_0_i0800_forced_coordination.npz",
+    "c19_0_i0400_forced_coordination.npz",
+    "c21_0_i0800_forced_coordination.npz",
+    "c15_0_i0400_forced_coordination.npz",
+    "c10_0_i0000_forced_coordination.npz",
+    "c16_0_i1600_forced_coordination.npz",
+    "c03_0_i1200_forced_coordination.npz",
+    "c09_0_i2000_forced_coordination.npz",
+    "c15_0_i0800_forced_coordination.npz",
+    "c11_0_i1600_forced_coordination.npz",
+    "c23_0_i1200_forced_coordination.npz",
+    "c03_0_i1600_forced_coordination.npz",
+    "c07_0_i1600_forced_coordination.npz"
+  ],
+  "layout": "forced_coordination",
+  "validation_clones": [
+    "c11_0_i0400_forced_coordination.npz",
+    "c22_0_i1600_forced_coordination.npz",
+    "c15_0_i2000_forced_coordination.npz",
+    "c11_0_i0800_forced_coordination.npz",
+    "c21_0_i1200_forced_coordination.npz",
+    "c07_0_i0400_forced_coordination.npz",
+    "c08_0_i1200_forced_coordination.npz",
+    "c15_0_i0000_forced_coordination.npz"
+  ]
+}

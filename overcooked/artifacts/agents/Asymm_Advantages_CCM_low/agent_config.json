@@ -1,0 +1,102 @@
+{
+  "extra_features": [],
+  "n_workers": 4,
+  "epochs": 5000,
+  "pbt_interval": 100,
+  "output_name": "Asymm_Advantages_CCM_low",
+  "training_clones": [
+    [
+      "c15_0_i0100_asymmetric_advantages.npz",
+      "clone_0"
+    ],
+    [
+      "c15_0_i0100_asymmetric_advantages.npz",
+      "clone_1"
+    ],
+    [
+      "c09_0_i0200_asymmetric_advantages.npz",
+      "clone_0"
+    ],
+    [
+      "c09_0_i0200_asymmetric_advantages.npz",
+      "clone_1"
+    ],
+    [
+      "c14_0_i0200_asymmetric_advantages.npz",
+      "clone_1"
+    ],
+    [
+      "c25_0_i0400_asymmetric_advantages.npz",
+      "clone_0"
+    ],
+    [
+      "c05_0_i0300_asymmetric_advantages.npz",
+      "clone_1"
+    ],
+    [
+      "c09_0_i0500_asymmetric_advantages.npz",
+      "clone_0"
+    ],
+    [
+      "c09_0_i0500_asymmetric_advantages.npz",
+      "clone_1"
+    ],
+    [
+      "c03_0_i0000_asymmetric_advantages.npz",
+      "clone_0"
+    ],
+    [
+      "c03_0_i0000_asymmetric_advantages.npz",
+      "clone_1"
+    ],
+    [
+      "c14_0_i0500_asymmetric_advantages.npz",
+      "clone_0"
+    ],
+    [
+      "c03_0_i0500_asymmetric_advantages.npz",
+      "clone_0"
+    ],
+    [
+      "c03_0_i0500_asymmetric_advantages.npz",
+      "clone_1"
+    ],
+    [
+      "c14_0_i0100_asymmetric_advantages.npz",
+      "clone_0"
+    ],
+    [
+      "c14_0_i0100_asymmetric_advantages.npz",
+      "clone_1"
+    ]
+  ],
+  "evaluation_clones": [
+    "c21_0_i0100_asymmetric_advantages.npz",
+    "c15_0_i0000_asymmetric_advantages.npz",
+    "c03_0_i0100_asymmetric_advantages.npz",
+    "c01_0_i0200_asymmetric_advantages.npz",
+    "c19_0_i0200_asymmetric_advantages.npz",
+    "c17_0_i0000_asymmetric_advantages.npz",
+    "c01_0_i0100_asymmetric_advantages.npz",
+    "c06_0_i0100_asymmetric_advantages.npz",
+    "c17_0_i0400_asymmetric_advantages.npz",
+    "c02_0_i0000_asymmetric_advantages.npz",
+    "c25_0_i0300_asymmetric_advantages.npz",
+    "c14_0_i0000_asymmetric_advantages.npz",
+    "c09_0_i0300_asymmetric_advantages.npz",
+    "c12_0_i0200_asymmetric_advantages.npz",
+    "c23_0_i0300_asymmetric_advantages.npz",
+    "c06_0_i0200_asymmetric_advantages.npz"
+  ],
+  "layout": "asymm_advantages",
+  "validation_clones": [
+    "c16_0_i0500_asymmetric_advantages.npz",
+    "c02_0_i0200_asymmetric_advantages.npz",
+    "c13_0_i0500_asymmetric_advantages.npz",
+    "c15_0_i0400_asymmetric_advantages.npz",
+    "c23_0_i0400_asymmetric_advantages.npz",
+    "c19_0_i0100_asymmetric_advantages.npz",
+    "c20_0_i0100_asymmetric_advantages.npz",
+    "c08_0_i0100_asymmetric_advantages.npz"
+  ]
+}
