@@ -1,6 +1,20 @@
 # Overcooked agents
 
+The task originates from [Overcooked-AI](https://github.com/HumanCompatibleAI/overcooked_ai), introduced by Carroll et al. (2019), *On the Utility of Learning about Humans for Human-AI Coordination*. This repository runs training and evaluation through the [JaxMARL](https://github.com/FLAIROx/JaxMARL) implementation of the environment.
+
 Run the following commands from the repository root using `overcooked/environment.yml`.
+
+## Overcooked layouts
+
+The five Overcooked-AI layouts impose different spatial and task-coordination demands.
+
+| Layout | Collaboration challenge | Layout structure |
+|---|---|---|
+| Cramped Room | Constrained shared-space coordination | <img src="../docs/layouts/cramped_room.png" alt="Cramped Room layout" height="120"> |
+| Coordination Ring | Narrow-path movement coordination | <img src="../docs/layouts/coord_ring.png" alt="Coordination Ring layout" height="120"> |
+| Counter Circuit | Counter-mediated task handoffs | <img src="../docs/layouts/counter_circuit.png" alt="Counter Circuit layout" height="120"> |
+| Asymmetric Advantages | Role-asymmetric task coordination | <img src="../docs/layouts/asymm_advantages.png" alt="Asymmetric Advantages layout" height="120"> |
+| Forced Coordination | Mandatory inter-agent handoffs | <img src="../docs/layouts/forced_coordination.png" alt="Forced Coordination layout" height="120"> |
 
 ## Train
 

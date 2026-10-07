@@ -80,6 +80,10 @@ See [Overcooked instructions](overcooked/README.md), [STAT instructions](stat_ex
 
 Use fresh output locations for new training runs. The original partner splits and labels are provided as fixed experimental inputs; raw human trajectories, survey exports, and label-generation tooling are outside this release.
 
+## Training hardware
+
+All models were trained on either a MacBook Pro with Apple Silicon M4 and 64 GB of RAM, or a university computing cluster running Linux with a CPU and at least 32 GB of RAM.
+
 ## Checks
 
 In the Overcooked environment:
