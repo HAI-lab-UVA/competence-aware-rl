@@ -17,7 +17,7 @@ from .replay import ReplayBuffer
 from .stat_runner import compose_partner_actions, make_env
 
 
-ARCH_CHOICES = ["Baseline", "CF", "CCM", "CCM+CF"]
+CONFIGURATION_CHOICES = ["Baseline", "CF", "CCM", "CCM+CF"]
 
 
 def obs_with_belief(obs: np.ndarray, belief: float, use_belief: bool) -> np.ndarray:
@@ -29,7 +29,7 @@ def obs_with_belief(obs: np.ndarray, belief: float, use_belief: bool) -> np.ndar
 
 def train_one(
     scenario_name: str,
-    architecture: str,
+    configuration: str,
     seed: int,
     total_steps: int,
     specialist: Optional[str],
@@ -44,7 +44,7 @@ def train_one(
 ) -> Path:
     scenario = load_scenario(scenario_name)
     levels = load_reliability_levels()["default_levels"]
-    use_belief = architecture in {"CF", "CCM+CF"}
+    use_belief = configuration in {"CF", "CCM+CF"}
     input_dim = scenario.obs_dim + (1 if use_belief else 0)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -59,7 +59,7 @@ def train_one(
     torch.manual_seed(seed)
     rng = np.random.default_rng(seed)
 
-    out_dir = ensure_results_dir("models", scenario.name, architecture, f"seed{seed}")
+    out_dir = ensure_results_dir("models", scenario.name, configuration, f"seed{seed}")
     if specialist:
         out_dir = out_dir / specialist
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -81,7 +81,7 @@ def train_one(
     rows = []
 
     def choose_condition():
-        if architecture in {"CCM", "CCM+CF"}:
+        if configuration in {"CCM", "CCM+CF"}:
             label = specialist or "high"
             return label, float(levels[label]["epsilon"]), float(levels[label]["belief"])
         label = str(rng.choice(["low", "medium", "high"]))
@@ -180,7 +180,7 @@ def train_one(
             episode_corruptions_applied = 0
 
     torch.save({
-        "architecture": architecture,
+        "configuration": configuration,
         "scenario": scenario.name,
         "specialist": specialist,
         "seed": seed,
@@ -203,7 +203,7 @@ def train_one(
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--scenario", required=True, choices=SCENARIO_CHOICES)
-    ap.add_argument("--architecture", required=True, choices=ARCH_CHOICES)
+    ap.add_argument("--configuration", required=True, choices=CONFIGURATION_CHOICES)
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--specialist", choices=["low", "medium", "high"], default=None)
     ap.add_argument("--total-steps", type=int, default=50000)
@@ -217,14 +217,14 @@ def main() -> None:
     ap.add_argument("--partner-checkpoint", type=str, default=None)
     args = ap.parse_args()
 
-    if args.architecture in {"CCM", "CCM+CF"} and args.specialist is None:
+    if args.configuration in {"CCM", "CCM+CF"} and args.specialist is None:
         raise SystemExit("--specialist is required for CCM and CCM+CF")
-    if args.architecture in {"Baseline", "CF"} and args.specialist is not None:
+    if args.configuration in {"Baseline", "CF"} and args.specialist is not None:
         raise SystemExit("--specialist is only used for CCM and CCM+CF")
 
     path = train_one(
         scenario_name=args.scenario,
-        architecture=args.architecture,
+        configuration=args.configuration,
         seed=args.seed,
         total_steps=args.total_steps,
         specialist=args.specialist,

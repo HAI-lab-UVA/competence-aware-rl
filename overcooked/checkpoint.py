@@ -39,7 +39,7 @@ def save_params_npz(params: Any, path: str):
 def load_params_npz(path: str, like_params: Any):
     """
     Rebuild a params PyTree using the structure of `like_params` and the
-    arrays stored in `path` (npz). This allows architecture to be inferred
+    arrays stored in `path` (npz). This allows configuration to be inferred
     from your current code while values come from the checkpoint.
     """
     data = np.load(path)

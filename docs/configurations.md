@@ -1,6 +1,6 @@
-# Competence-aware architectures
+# Competence-aware configurations
 
-| Architecture | Overcooked model names | STAT architecture |
+| Configuration | Overcooked model names | STAT configuration |
 |---|---|---|
 | CF | `<Layout>_CF` | `CF` |
 | CCM | `<Layout>_CCM_{low,middle,high}` | `CCM` |

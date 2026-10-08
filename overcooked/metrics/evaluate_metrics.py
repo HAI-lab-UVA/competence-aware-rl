@@ -27,7 +27,7 @@ def main():
                'coordination_interference', 'team_performance',
                'belief_error', 'signed_belief_error']
     constructs[columns].rename(columns={
-        'agent_name': 'architecture', 'clone_name': 'partner_name', 'clone_role': 'partner_role',
+        'agent_name': 'configuration', 'clone_name': 'partner_name', 'clone_role': 'partner_role',
         'agent_score_input': 'believed_competence', 'clone_score': 'true_competence',
         'agent_group': 'believed_competence_group', 'clone_group': 'true_competence_group',
     }).to_csv(folder / 'trial_constructs.csv', index=False)

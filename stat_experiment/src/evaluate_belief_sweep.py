@@ -14,8 +14,8 @@ from .policies import FDQNPolicy, NearestTaskPartner, load_fdqn_partner_policy
 from .stat_runner import make_env, run_episode
 
 
-def model_path(scenario: str, architecture: str, seed: int, specialist: str | None, models_dir: Path | None = None) -> Path:
-    base = (models_dir or ARTIFACTS_DIR / "models") / scenario / architecture / f"seed{seed}"
+def model_path(scenario: str, configuration: str, seed: int, specialist: str | None, models_dir: Path | None = None) -> Path:
+    base = (models_dir or ARTIFACTS_DIR / "models") / scenario / configuration / f"seed{seed}"
     if specialist:
         base = base / specialist
     return base / "latest.pt"
@@ -37,7 +37,7 @@ def load_policy(path: Path, belief: float | None, device: torch.device) -> FDQNP
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--scenario", required=True, choices=SCENARIO_CHOICES)
-    ap.add_argument("--architecture", required=True, choices=["Baseline", "CF", "CCM", "CCM+CF"])
+    ap.add_argument("--configuration", required=True, choices=["Baseline", "CF", "CCM", "CCM+CF"])
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--episodes", type=int, default=50)
     ap.add_argument("--models-dir", type=Path, default=None, help="Model root; defaults to released artifacts/models")
@@ -49,17 +49,17 @@ def main() -> None:
     levels = load_reliability_levels()["default_levels"]
     labels = ["low", "medium", "high"]
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    out_dir = ensure_results_dir("evaluation", scenario.name, args.architecture)
+    out_dir = ensure_results_dir("evaluation", scenario.name, args.configuration)
     out_path = args.out or str(out_dir / f"seed{args.seed}_belief_sweep.csv")
     rows = []
 
     for true_label in labels:
         true_epsilon = float(levels[true_label]["epsilon"])
-        belief_labels = ["none"] if args.architecture == "Baseline" else labels
+        belief_labels = ["none"] if args.configuration == "Baseline" else labels
         for belief_label in belief_labels:
             belief = None if belief_label == "none" else float(levels[belief_label]["belief"])
-            specialist = belief_label if args.architecture in {"CCM", "CCM+CF"} else None
-            adaptive_policy = load_policy(model_path(args.scenario, args.architecture, args.seed, specialist, args.models_dir), belief, device)
+            specialist = belief_label if args.configuration in {"CCM", "CCM+CF"} else None
+            adaptive_policy = load_policy(model_path(args.scenario, args.configuration, args.seed, specialist, args.models_dir), belief, device)
 
             for ep in range(args.episodes):
                 ep_seed = args.seed * 1000000 + ep
@@ -79,7 +79,7 @@ def main() -> None:
                 row = asdict(result)
                 row.update({
                     "scenario": scenario.name,
-                    "architecture": args.architecture,
+                    "configuration": args.configuration,
                     "train_seed": args.seed,
                     "true_competence": true_label,
                     "true_epsilon": true_epsilon,

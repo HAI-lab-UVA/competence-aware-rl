@@ -5,7 +5,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'overcooked/metrics'))
 from metric_core import movement_conflict, task_group, standardize_agent_name
 
 class FrameworkTests(unittest.TestCase):
-    def test_architecture_labels(self):
+    def test_configuration_labels(self):
         for name in ['CF','CCM','CCM+CF','Baseline']:
             self.assertEqual(standardize_agent_name('Cramped_Room_'+name),name)
         self.assertEqual(standardize_agent_name('Cramped_Room_CCM_low'),'Cramped_Room_CCM_low')

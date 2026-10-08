@@ -820,10 +820,10 @@ def evaluate_script(
             (f"{layout_prefix}_CCM",     False),
             (f"{layout_prefix}_CCM+CF", True),
         ]:
-            architecture = "CCM+CF" if use_cf else "CCM"
-            low_path  = _model_path(models_dir, f"{layout_prefix}_{architecture}_low")
-            mid_path  = _model_path(models_dir, f"{layout_prefix}_{architecture}_middle")
-            high_path = _model_path(models_dir, f"{layout_prefix}_{architecture}_high")
+            configuration = "CCM+CF" if use_cf else "CCM"
+            low_path  = _model_path(models_dir, f"{layout_prefix}_{configuration}_low")
+            mid_path  = _model_path(models_dir, f"{layout_prefix}_{configuration}_middle")
+            high_path = _model_path(models_dir, f"{layout_prefix}_{configuration}_high")
 
             ccm_obs_dim = FEATURE_DIM + (1 if use_cf else 0)
             ccm = CCMAgent(low_path, mid_path, high_path,
@@ -831,7 +831,7 @@ def evaluate_script(
 
             for label, path in [("low", low_path), ("middle", mid_path), ("high", high_path)]:
                 if not os.path.exists(path):
-                    missing.append(f"{layout_prefix}_{architecture}_{label}")
+                    missing.append(f"{layout_prefix}_{configuration}_{label}")
 
             # CCM+CF routes to a DIFFERENT specialist per score, and each
             # specialist (CCM+CF low/middle/high) was trained with its own
@@ -839,9 +839,9 @@ def evaluate_script(
             # the correct normalization depends on which one ends up
             # selected, not a single global stat.
             ccm_stats_by_group = {
-                "Low":    load_extra_feature_stats(models_dir, f"{layout_prefix}_{architecture}_low"),
-                "Middle": load_extra_feature_stats(models_dir, f"{layout_prefix}_{architecture}_middle"),
-                "High":   load_extra_feature_stats(models_dir, f"{layout_prefix}_{architecture}_high"),
+                "Low":    load_extra_feature_stats(models_dir, f"{layout_prefix}_{configuration}_low"),
+                "Middle": load_extra_feature_stats(models_dir, f"{layout_prefix}_{configuration}_middle"),
+                "High":   load_extra_feature_stats(models_dir, f"{layout_prefix}_{configuration}_high"),
             }
 
             def _ccm_extra_fn(score, _use_cf=use_cf, _metric=metric,

@@ -36,8 +36,8 @@ competence_conditioned_rl/
 | [overcooked/](overcooked/README.md) | PPO/PBT training, belief-sweep and cross-layout evaluation, partner splits, and framework metrics |
 | [stat_experiment/](stat_experiment/README.md) | FDQN training, reliability calibration, scenario definitions, and controlled evaluation |
 | examples/ | Short evaluation runs using the released models |
-| docs/ | Architecture descriptions and evaluation framework definitions |
-| tests/ | Metric and architecture-label boundary checks |
+| docs/ | Configuration descriptions and evaluation framework definitions |
+| tests/ | Metric and configuration-label boundary checks |
 | results/ | Generated experiment outputs; ignored by Git |
 
 Overcooked includes partner checkpoints and their competence labels, five self-play baselines, and 35 competence-aware policies. STAT includes the paper scenario's frozen partner and 40 adaptive-agent policies across five training seeds. Released checkpoints are stored in each domain's `artifacts/` directory, separately from new experiment outputs.
@@ -70,11 +70,11 @@ pip install -r stat_experiment/requirements.txt
 python examples/stat_quickstart.py
 ```
 
-The example uses `3A_12T_10x6`, seed 0, and one episode per reliability/belief condition. It evaluates all four architectures and writes CSVs under `results/stat/evaluation/`. CSVs include reward, workload and assignment shares, and coordination diagnostics. The environment dependency is pinned to the public STAT commit used by the original implementation.
+The example uses `3A_12T_10x6`, seed 0, and one episode per reliability/belief condition. It evaluates all four configurations and writes CSVs under `results/stat/evaluation/`. CSVs include reward, workload and assignment shares, and coordination diagnostics. The environment dependency is pinned to the public STAT commit used by the original implementation.
 
 ## Training and full evaluation
 
-See [Overcooked instructions](overcooked/README.md), [STAT instructions](stat_experiment/README.md), [architecture mapping](docs/architectures.md), and [evaluation framework](docs/evaluation_framework.md).
+See [Overcooked instructions](overcooked/README.md), [STAT instructions](stat_experiment/README.md), [configuration mapping](docs/configurations.md), and [evaluation framework](docs/evaluation_framework.md).
 
 Use fresh output locations for new training runs. The original partner splits and labels are provided as fixed experimental inputs; raw human trajectories, survey exports, and label-generation tooling are outside this release.
 

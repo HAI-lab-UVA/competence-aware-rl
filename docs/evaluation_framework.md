@@ -8,7 +8,7 @@ Hold all policy parameters fixed. Pair an adaptive agent with a fixed partner (o
 
 The evaluator compares Baseline, CF, CCM, and CCM+CF. CCM and CCM+CF specialists are evaluated through their competence-conditioned selectors.
 
-`trial_constructs.csv` contains architecture, layout, partner, role, competence, and trial identifiers, together with the paper metrics:
+`trial_constructs.csv` contains configuration, layout, partner, role, competence, and trial identifiers, together with the paper metrics:
 
 | Column | Definition |
 |---|---|

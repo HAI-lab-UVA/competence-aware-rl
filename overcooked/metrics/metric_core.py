@@ -94,10 +94,10 @@ def environment_bundle(layout):
     return (TerminalSafeReplayEnv(env), _get_layout_stations(env))
 
 def standardize_agent_name(name):
-    """Return paper architecture labels; preserve specialist identifiers."""
-    for architecture in ('CCM+CF', 'CCM', 'CF', 'Baseline'):
-        if name == architecture or name.endswith('_' + architecture):
-            return architecture
+    """Return paper configuration labels; preserve specialist identifiers."""
+    for configuration in ('CCM+CF', 'CCM', 'CF', 'Baseline'):
+        if name == configuration or name.endswith('_' + configuration):
+            return configuration
     return name
 
 def token(value):
