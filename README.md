@@ -4,8 +4,6 @@ Implementation accompanying *Separating Belief from Ability: Evaluating Competen
 
 This repository provides CF, CCM, CCM+CF, and competence-agnostic baselines in Overcooked-AI and STAT, together with trained policies, partner inputs, and controlled evaluation. Vary believed partner competence while keeping the partner policies fixed, then measure behavioral adaptation separately from team performance.
 
-This is an implementation and evaluation release. It supports new training and evaluation runs; it does not provide the complete historical dataset, human-data collection workflow, or notebooks for regenerating every paper figure and table. Retraining and reevaluation can vary with hardware, dependencies, and randomness.
-
 ## Repository layout
 
 ```text

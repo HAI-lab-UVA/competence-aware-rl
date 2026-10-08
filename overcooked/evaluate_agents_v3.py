@@ -1033,7 +1033,7 @@ def parse_args():
     )
     ap.add_argument("--scripts", type=str, nargs="+", required=True,
                     help="One or more training script JSON files "
-                         "(e.g. configs/Train1a.json)")
+                         "(e.g. configs/cramped_room.json)")
     ap.add_argument("--models-dir", type=str, required=True,
                     help="Root directory of trained agents "
                          "(--out-dir from run_agent_pipeline.py)")

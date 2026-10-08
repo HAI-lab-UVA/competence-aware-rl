@@ -32,7 +32,7 @@ Fine-tune competence-aware agents using the released self-play baselines and par
 
 ```bash
 python overcooked/run_agent_pipeline.py \
-  --agents overcooked/configs/Train1a.json \
+  --agents overcooked/configs/cramped_room.json \
   --clones-dir overcooked/artifacts/partners \
   --clones-scores overcooked/artifacts/partners/competence_labels.json \
   --baselines-dir overcooked/artifacts/baselines \
@@ -42,13 +42,23 @@ python overcooked/run_agent_pipeline.py \
   --shaping-plate-soup 5 --shaping-deliver-soup 5 --seed 0
 ```
 
-`Train1a` = Cramped Room, `1b` = Coordination Ring, `1c` = Asymmetric Advantages, `1d` = Counter Circuit, `1e` = Forced Coordination. The original competence-policy launch settings used 4096 rollout steps for a/b/e and 2048 for c/d. JSON configurations contain update counts, partner pools, and stopping settings. Consult each training entry point's `--help` for overrides. Some historical flags are retained for compatibility; notably the adaptive trainer does not use the plate-soup shaping flag. The release preserves that behavior rather than altering the original algorithm.
+Training configurations are named after their layouts:
+
+| Configuration | Layout | Rollout steps |
+| --- | --- | --- |
+| `cramped_room.json` | Cramped Room | 4096 |
+| `coordination_ring.json` | Coordination Ring | 4096 |
+| `asymmetric_advantages.json` | Asymmetric Advantages | 2048 |
+| `counter_circuit.json` | Counter Circuit | 2048 |
+| `forced_coordination.json` | Forced Coordination | 4096 |
+
+The rollout lengths above are the original competence-policy launch settings. JSON configurations contain update counts, partner pools, and stopping settings. Consult each training entry point's `--help` for overrides. Some historical flags are retained for compatibility; notably the adaptive trainer does not use the plate-soup shaping flag. The release preserves that behavior rather than altering the original algorithm.
 
 ## Evaluate released agents
 
 ```bash
 python overcooked/evaluate_agents.py \
-  --scripts overcooked/configs/Train1a.json \
+  --scripts overcooked/configs/cramped_room.json \
   --models-dir overcooked/artifacts/agents \
   --clones-dir overcooked/artifacts/partners \
   --clones-scores overcooked/artifacts/partners/competence_labels.json \
@@ -61,7 +71,7 @@ python overcooked/metrics/evaluate_metrics.py \
   --evaluation-root results/overcooked --out-dir results/overcooked/metrics
 ```
 
-Repeat the evaluator for Train1b–e into the same evaluation directory, or pass all five JSONs to `--scripts`. To evaluate new training runs, point `--models-dir` at their output directory. Choose new output directories when changing experiment settings; the evaluator can resume existing CSVs.
+Repeat the evaluator for the other layout configurations into the same evaluation directory, or pass all five JSONs to `--scripts`. To evaluate new training runs, point `--models-dir` at their output directory. Choose new output directories when changing experiment settings; the evaluator can resume existing CSVs.
 
 ## Cross-layout transfer
 

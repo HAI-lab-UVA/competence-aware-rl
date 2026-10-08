@@ -15,13 +15,13 @@ kitchen events for both sides at every timestep.
 
 Usage:
     python decode_trial_logs.py \\
-        --trial-logs evaluation/agents/Train1a_trial_logs.csv \\
+        --trial-logs evaluation/agents/cramped_room_trial_logs.csv \\
         --layout Cramped_Room \\
-        --out Train1a_trial_logs_expanded.jsonl
+        --out cramped_room_trial_logs_expanded.jsonl
 
     # Only a specific trial (much faster than decoding the whole file):
     python decode_trial_logs.py \\
-        --trial-logs evaluation/agents/Train1a_trial_logs.csv \\
+        --trial-logs evaluation/agents/cramped_room_trial_logs.csv \\
         --layout Cramped_Room \\
         --agent-name Cramped_Room_CCM_low --clone-name clone_003 \\
         --clone-role clone_0 --trial 2 \\

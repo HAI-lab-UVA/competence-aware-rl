@@ -14,7 +14,7 @@ def main():
         parser.error('Steps and trials must be positive')
     oc = ROOT / 'overcooked'
     subprocess.run([sys.executable, str(oc / 'evaluate_agents.py'),
-        '--scripts', str(oc / 'configs/Train1a.json'),
+        '--scripts', str(oc / 'configs/cramped_room.json'),
         '--models-dir', str(oc / 'artifacts/agents'),
         '--clones-dir', str(oc / 'artifacts/partners'),
         '--clones-scores', str(oc / 'artifacts/partners/competence_labels.json'),
