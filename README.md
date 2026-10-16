@@ -96,13 +96,12 @@ python -m unittest discover -s tests -v
 
 If you use these agents or the evaluation framework, please cite the accompanying paper:
 
-> Anonymous Author(s). *Separating Belief from Ability: Evaluating Competence-Aware Adaptation in Multi-Agent Teams*. Anonymized manuscript.
-
 ```bibtex
-@misc{competence_aware_adaptation,
+@article{clark2026separating,
   title  = {Separating Belief from Ability: Evaluating Competence-Aware Adaptation in Multi-Agent Teams},
-  author = {Anonymous Author(s)},
-  note   = {Anonymized manuscript}
+  author = {Clark, Matthew and Bethapuri, Sree Deeksha and Cardei, Maria and Sprague, Hannah and Verma, Salonee and Doryab, Afsaneh},
+  journal = {arXiv preprint},
+  year = {2026}
 }
 ```
 
